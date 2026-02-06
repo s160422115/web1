@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Landing Page Biodata</title>
+    <title>Jace Bio Landing Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -20,98 +20,118 @@
         }
 
         body {
-            background: #f5f7fa;
+            background: #f4f6fb;
             color: #333;
+            line-height: 1.6;
         }
 
+        /* HERO */
         header {
             height: 100vh;
-            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            background: linear-gradient(135deg, #667eea, #764ba2);
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             color: #fff;
+            padding: 20px;
         }
 
         header img {
-            width: 150px;
-            height: 150px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
-            border: 4px solid #fff;
-            margin-bottom: 20px;
+            border: 5px solid rgba(255,255,255,0.6);
+            margin-bottom: 25px;
+            object-fit: cover;
         }
 
         header h1 {
-            font-size: 2.5rem;
-            font-weight: 600;
+            font-size: 2.8rem;
+            font-weight: 700;
         }
 
         header p {
-            margin-top: 10px;
+            margin-top: 12px;
             font-size: 1.1rem;
+            opacity: 0.9;
         }
 
         .btn {
             display: inline-block;
-            margin-top: 25px;
-            padding: 12px 30px;
+            margin-top: 30px;
+            padding: 14px 36px;
             background: #fff;
-            color: #00aaff;
-            border-radius: 30px;
+            color: #667eea;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            transition: 0.3s;
+            transition: all 0.3s ease;
         }
 
         .btn:hover {
-            background: #e6f7ff;
+            background: #eef1ff;
+            transform: translateY(-3px);
         }
 
+        /* SECTIONS */
         section {
-            padding: 80px 10%;
+            padding: 90px 10%;
         }
 
         section h2 {
             text-align: center;
-            margin-bottom: 40px;
-            font-size: 2rem;
-            color: #00aaff;
+            margin-bottom: 45px;
+            font-size: 2.2rem;
+            color: #667eea;
         }
 
-        .about, .skills, .contact {
+        .card {
             background: #fff;
-            margin-bottom: 30px;
-            border-radius: 12px;
-            padding: 40px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-radius: 16px;
+            padding: 45px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+            margin-bottom: 40px;
         }
 
+        /* SKILLS */
         .skills ul {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 18px;
             list-style: none;
         }
 
         .skills li {
-            background: #f0f8ff;
-            padding: 12px;
-            border-radius: 8px;
+            background: linear-gradient(135deg, #fdfbfb, #ebedee);
+            padding: 14px;
+            border-radius: 10px;
             text-align: center;
             font-weight: 500;
         }
 
+        /* CONTACT */
+        .contact p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* FOOTER */
         footer {
             text-align: center;
-            padding: 20px;
-            background: #00aaff;
+            padding: 25px;
+            background: #667eea;
             color: #fff;
+            font-size: 0.9rem;
         }
 
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2rem;
+                font-size: 2.1rem;
+            }
+
+            section {
+                padding: 70px 7%;
             }
         }
     </style>
@@ -121,46 +141,48 @@
     <!-- HERO -->
     <header>
         <div>
-            <img src="jace.jpg" alt="Foto Profil">
+            <img src="jace.jpg" alt="Profile Photo">
             <h1>Jace Giovanno Andreas</h1>
-            <p>3 Months | Since 01/11/2025</p>
-            <a href="#about" class="btn">Lihat Biodata</a>
+            <p>3 Months • Since 1st November of 2025</p>
+            <a href="#about" class="btn">View My Bio</a>
         </div>
     </header>
 
     <!-- ABOUT -->
     <section id="about">
-        <div class="about">
-            <h2>Tentang Saya</h2>
+        <div class="card">
+            <h2>About Me</h2>
             <p>
-                Halo! Saya adalah anak laki-laki pertama dari Andreas Gunawan dan Cheryl Clarissa...(lanjut)
+                Hi! I am the first son of <strong>Andreas Gunawan</strong> and 
+                <strong>Cheryl Clarissa</strong>. I am a cheerful, curious, and 
+                growing human who loves discovering new things every day.
             </p>
         </div>
     </section>
 
     <!-- SKILLS -->
     <section>
-        <div class="skills">
-            <h2>Keahlian</h2>
+        <div class="card skills">
+            <h2>My Skills</h2>
             <ul>
-                <li>Makan</li>
-                <li>Tidur</li>
-                <li>Poop</li>
-                <li>Nangis</li>
+                <li>Eating</li>
+                <li>Sleeping</li>
+                <li>Pooping</li>
+                <li>Crying</li>
             </ul>
         </div>
     </section>
 
     <!-- CONTACT -->
     <section>
-        <div class="contact">
-            <h2>Kontak</h2>
-            <p>Instagram: @jacenolimit1</p>
+        <div class="card contact">
+            <h2>Contact</h2>
+            <p>Instagram: <strong>@jacenolimit1</strong></p>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 JaceGivannoAndreas. All rights reserved.</p>
+        <p>© 2026 Jace Givanno Andreas. All rights reserved.</p>
     </footer>
 
     <script>
