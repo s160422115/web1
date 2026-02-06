@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page Biodata</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background: #fff;
+            color: #00aaff;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e6f7ff;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #00aaff;
+        }
+
+        .about, .skills, .contact {
+            background: #fff;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            list-style: none;
+        }
+
+        .skills li {
+            background: #f0f8ff;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #00aaff;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <header>
+        <div>
+            <img src="jace.jpg" alt="Foto Profil">
+            <h1>Jace Giovanno Andreas</h1>
+            <p>3 Months | Since 01/11/2025</p>
+            <a href="#about" class="btn">Lihat Biodata</a>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="about">
+            <h2>Tentang Saya</h2>
+            <p>
+                Halo! Saya adalah anak laki-laki pertama dari Andreas Gunawan dan Cheryl Clarissa...(lanjut)
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <div class="skills">
+            <h2>Keahlian</h2>
+            <ul>
+                <li>Makan</li>
+                <li>Tidur</li>
+                <li>Poop</li>
+                <li>Nangis</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+        <div class="contact">
+            <h2>Kontak</h2>
+            <p>Instagram: @jacenolimit1</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 JaceGivannoAndreas. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        $('.btn').on('click', function(e) {
+            e.preventDefault();
+            const target = $($(this).attr('href'));
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 800);
+        });
+    </script>
+
+</body>
+</html>
